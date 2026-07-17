@@ -1,5 +1,5 @@
 const { Server } = require("colyseus");
-const room = require("./room");
+const room = require("./rooms);
 
 
 const gameServer = new Server();
