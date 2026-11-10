@@ -1,0 +1,344 @@
+{
+  "gameModes": {
+    "PowerBall": {
+      "teams": 2,
+      "time": 360,
+      "winPoints": 4,
+      "rounds": 7
+    },
+    "FFA": {
+      "teams": -1,
+      "time": 360,
+      "winPoints": 250,
+      "rounds": 1
+    },
+    "Domination": {
+      "teams": 2,
+      "time": 450,
+      "winPoints": 500,
+      "rounds": 1
+    }
+  },
+  "effects": {
+    "Electrified": {
+      "name": "Electrified",
+      "stackable": true,
+      "levels": {
+        "l1": 0,
+        "l2": 0.8,
+        "l3": 1.5,
+        "l4": 2.4,
+        "l5": 3.5
+      },
+      "rate": {
+        "l1": 750,
+        "l2": 650,
+        "l3": 550,
+        "l4": 425,
+        "l5": 300
+      },
+      "dmg": {
+        "l1": 3,
+        "l2": 4,
+        "l3": 5,
+        "l4": 6,
+        "l5": 8
+      },
+      "time": {
+        "l1": 4,
+        "l2": 5,
+        "l3": 6,
+        "l4": 7,
+        "l5": 8
+      },
+      "speed": {
+        "l1": -0.5,
+        "l2": -1,
+        "l3": -3,
+        "l4": -4,
+        "l5": -5
+      }
+    },
+    "burn": {
+      "name": "burn",
+      "stackable": true,
+      "levels": {
+        "l1": 0,
+        "l2": 0.9,
+        "l3": 1.8,
+        "l4": 3,
+        "l5": 5.5
+      },
+      "rate": {
+        "l1": 600,
+        "l2": 500,
+        "l3": 400,
+        "l4": 300,
+        "l5": 200
+      },
+      "dmg": {
+        "l1": 1,
+        "l2": 2,
+        "l3": 3,
+        "l4": 4,
+        "l5": 5
+      },
+      "time": {
+        "l1": 5,
+        "l2": 6,
+        "l3": 7,
+        "l4": 8,
+        "l5": 9
+      }
+    }
+  },
+  "bullet": {
+    "Electric": {
+      "name": "Electric",
+      "range": 30,
+      "effect": {
+        "name": "Electrified",
+        "intensity": 0.3
+      }
+    },
+    "thunder": {
+      "name": "Thunder",
+      "range": 50,
+      "effect": {
+        "name": "Electrified",
+        "intensity": 1
+      }
+    },
+    "thunder-grenade": {
+      "name": "Thundernade",
+      "range": 25,
+      "effect": {
+        "name": "Electrified",
+        "intensity": 1
+      },
+      "activationTime": 3.5
+    },
+    "electric-big": {
+      "name": "Electric big",
+      "range": 45,
+      "effect": {
+        "name": "Electrified",
+        "intensity": 0.8
+      }
+    },
+    "missile": {
+      "name": "missile",
+      "range": 20,
+      "explosionRadius": 7
+    },
+    "rocket": {
+      "name": "rocket",
+      "range": 50,
+      "explosionRadius": 25
+    },
+    "cannon-ball": {
+      "name": "cannon-ball",
+      "range": 35,
+      "explosionRadius": 30
+    },
+    "sniper-bullet": {
+      "name": "sniper-bullet",
+      "range": 50,
+      "effect": {
+        "name": "burn",
+        "intensity": 0.4
+      }
+    },
+    "splash-bullet": {
+      "name": "splash-bullet",
+      "range": 25
+    },
+    "laser": {
+      "name": "laser",
+      "range": 40
+    },
+    "bullet": {
+      "name": "bullet",
+      "range": 45
+    }
+  },
+  "passives": {
+    "Flying": {
+      "discription": ""
+    }
+  },
+  "weapons": {
+    "electric_charger": {
+      "name": "Electric charger",
+      "dmg": 15,
+      "dmg2": 35,
+      "headShotMulti": 2.4,
+      "fire_rate": 4.5,
+      "ammo": 20,
+      "fullammo": 20,
+      "reload": 2,
+      "delay": 150,
+      "consumption": 12,
+      "bullet": "Electric",
+      "bullet2": "electric-big",
+      "atk2type": "hold",
+      "atk2time": 1.5,
+      "rarity": "primary"
+    },
+    "thunderifle": {
+      "name": "thunderifle",
+      "display": "ThundeRifle",
+      "dmg": 40,
+      "dmg2": 75,
+      "headShotMulti": 1.9,
+      "fire_rate": 0.7,
+      "ammo": 4,
+      "fullammo": 4,
+      "reload": 4,
+      "delay": 150,
+      "consumption": 10,
+      "bullet": "thunder",
+      "bullet2": "thunder-grenade",
+      "atk2type": "grenade",
+      "rarity": "rare"
+    },
+    "missile_launcher": {
+      "name": "missile_launcher",
+      "dmg": 6,
+      "dmg2": 75,
+      "headShotMulti": 1.6,
+      "fire_rate": 0.9,
+      "ammo": 12,
+      "fullammo": 12,
+      "reload": 3.5,
+      "delay": 165,
+      "consumption": 12,
+      "bullet": "missile",
+      "bullet2": "rocket",
+      "atk2type": "hold",
+      "atk2time": 2.5,
+      "rarity": "primary"
+    },
+    "cannon": {
+      "name": "cannon",
+      "dmg": 30,
+      "dmg2": 40,
+      "fire_rate": 1,
+      "ammo": 8,
+      "fullammo": 8,
+      "reload": 2.5,
+      "delay": 200,
+      "consumption": 15,
+      "bullet": "cannon-ball",
+      "bullet2": "sniper-bullet",
+      "atk2type": "focus",
+      "rarity": "primary"
+    },
+    "splash-gun": {
+      "name": "splash-gun",
+      "dmg": 45,
+      "dmg2": 30,
+      "headShotMulti": 1.35,
+      "fire_rate": 1.4,
+      "ammo": 14,
+      "fullammo": 14,
+      "reload": 1.8,
+      "delay": 175,
+      "consumption": 12,
+      "bullet": "splash-bullet",
+      "atk2type": "switch",
+      "mode": "splash",
+      "rarity": "rare"
+    },
+    "lsr-500": {
+      "name": "lsr-500",
+      "display": "LSR-500",
+      "dmg": 10,
+      "dmg2": 30,
+      "headShotMulti": 1.2,
+      "fire_rate": 10,
+      "ammo": 50,
+      "fullammo": 50,
+      "reload": 1.4,
+      "delay": 75,
+      "consumption": 8,
+      "bullet": "laser",
+      "bullet2": "laser",
+      "atk2type": "fire",
+      "rarity": "epic"
+    },
+    "mag-stick": {
+      "name": "mag-stick",
+      "display": "Mag-Stick",
+      "type": "melee",
+      "dmg": 80,
+      "dmg2": 10,
+      "headShotMulti": 1.7,
+      "fire_rate": 0.8,
+      "ammo": 20,
+      "fullammo": 20,
+      "delay": 40,
+      "atk2type": "magnet",
+      "chargingInterval": null,
+      "rarity": "basic"
+    },
+    "prototype-tr": {
+      "name": "prototype-tr",
+      "display": "Prototype-TR",
+      "dmg": 11,
+      "dmg2": 11,
+      "headShotMulti": 1.4,
+      "fire_rate": 14,
+      "ammo": 120,
+      "fullammo": 120,
+      "reload": 3.1,
+      "delay": 110,
+      "consumption": 15,
+      "bullet": "bullet",
+      "bullet2": "bullet",
+      "atk2type": "transform",
+      "transformed": false,
+      "transformTimer": 0,
+      "transformGauge": 0,
+      "rarity": "legendary"
+    }
+  },
+  "drop_pool": {
+    "thunderifle": {
+      "chance": 60,
+      "name": "thunderifle"
+    },
+    "splash-gun": {
+      "chance": 40,
+      "name": "splash-gun"
+    }
+  },
+  "characters": {
+    "base": {
+      "health": 150,
+      "main_weapon": "electric_charger",
+      "maxPower": 70,
+      "passive": "Electrican"
+    },
+    "rex": {
+      "health": 100,
+      "main_weapon": "missile_launcher",
+      "maxPower": 60,
+      "passive": "Flying"
+    },
+    "cannon": {
+      "health": 250,
+      "main_weapon": "cannon",
+      "maxPower": 64,
+      "passive": "heavy"
+    }
+  },
+  "maps": {
+    "containers": {
+      "name": "containers",
+      "display": "Containers",
+      "location": "Beta",
+      "scale": 0.65
+    }
+  }
+}
